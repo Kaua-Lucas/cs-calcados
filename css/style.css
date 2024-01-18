@@ -16,8 +16,8 @@
     --fundo:#131B23;
     --laranja:#FE7F2D;
     --verdeClaro:#61988A;
-    --cinza:#627CB5;
-    --branco:white;
+    --cinza:#627C85;
+    --branco:#b1b4b7;
 }
 
 *{
@@ -36,11 +36,11 @@ body{
 header{
     display: flex;
     align-items: center;
-    padding: 50px 75px ;
+    padding: 5% ;
     justify-content: center;
-    width: auto;
+    width: 100%;
     gap:40%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .cabecalho__divP{
     display: flex;
@@ -58,7 +58,7 @@ header{
 
     font-family: var(--titulo);
     font-weight: var(--tamanho);
-    color:var(--branco);
+    color:white;
     font-size: 2.2rem;
     
 
@@ -73,14 +73,77 @@ header{
     font-family: var(--subTitulo);
     font-weight: var(--tamanho);
     text-decoration: none;
-    color:var(--branco);
-    font-size: 1.6rem;
-    padding: 12px 39px;
+    color:black;
+    font-size: 1.5rem;
+    padding: 12px 2%;
     background-color: var(--verdeClaro);
     border-radius: 20px;
     
 
 }
+.principal{
+
+}
+.principal__div{
+    background-color:var(--branco) ;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 150px 0px;
+    font-family: var(--subTitulo);
+    font-weight: var(--tamanho);
+}
+.principal__div2{
+    color:white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size:1.9rem;
+    font-family: var(--subTitulo);
+    font-weight: var(--tamanho);
+}
+.principal__sessao{
+    display: flex;
+    width: auto;
+}
+
+.principal__sessao__div__img{
+    width: 20%;
+}
+
+.principal__sessao__div__interno{
+    display: flex; 
+    gap:100px;
+    padding:5%;
+    width: auto;
+    
+}
+.principal__sessao__div__interno__span{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    font-family: var(--texto);
+    font-size: 25px;
+
+}
+.rodape{
+    /* background-color: var(--cinza);
+    padding: 184px 40px; */
+
+}
+.rodape__div{
+    background-color: var(--cinza);
+    padding: 5% 40px;
+    display: flex;
+    font-family: var(--texto);
+    font-weight: var(--tamanho);
+    justify-content: center;
+    gap: 200px;
+}
+
 @media(max-wdith:1536px){
     
 }
