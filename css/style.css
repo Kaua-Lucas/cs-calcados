@@ -16,6 +16,7 @@
     --fundo:#131B23;
     --laranja:#FE7F2D;
     --verdeClaro:#61988A;
+    --verdeEscuro:#4e7a6f;
     --cinza:#627C85;
     --branco:#b1b4b7;
 }
@@ -31,21 +32,18 @@
 }
 body{
     background-color: var(--fundo);
-    
 }
 header{
     display: flex;
     align-items: center;
-    padding: 5% ;
-    justify-content: center;
-    width: 100%;
-    gap:40%;
+    padding: 5% 0;
+    justify-content: space-around;
     /* flex-wrap: wrap; */
 }
 .cabecalho__divP{
     display: flex;
     align-items: center;
-    gap:42px
+    gap:2%
 }
 
 .cabecalho__div__img{
@@ -59,7 +57,7 @@ header{
     font-family: var(--titulo);
     font-weight: var(--tamanho);
     color:white;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     
 
 }
@@ -70,19 +68,20 @@ header{
 }
 .cabecalho_button{
 
-    font-family: var(--subTitulo);
-    font-weight: var(--tamanho);
+    color: black;
     text-decoration: none;
-    color:black;
-    font-size: 1.5rem;
-    padding: 12px 2%;
+    border-radius:20px;
+    padding:3% 7.5%;
+    font-family:    var(--subTitulo) ;
+    font-weight: var(--tamanho);
+    font-size:1.4rem;
     background-color: var(--verdeClaro);
-    border-radius: 20px;
-    
 
 }
 .principal{
-
+    display: flex;
+    flex-direction: column;
+    gap:25px
 }
 .principal__div{
     background-color:var(--branco) ;
@@ -90,22 +89,57 @@ header{
     text-align: center;
     align-items: center;
     font-size: 1.5rem;
-    padding: 150px 0px;
+    padding: 12.5vw 0px;
     font-family: var(--subTitulo);
     font-weight: var(--tamanho);
+    
 }
 .principal__div2{
     color:white;
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
     font-size:1.9rem;
     font-family: var(--subTitulo);
     font-weight: var(--tamanho);
 }
+
+.AreaDeButtons{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.buttons__busca{
+    color: black;
+    text-decoration: none;
+    border-radius:20px;
+    padding:1% 5%;
+    font-family:    var(--subTitulo) ;
+    font-weight: var(--tamanho);
+    font-size:1.4rem;
+    background-color: var(--verdeClaro);
+    
+    
+}
+.buttons__busca:hover, .cabecalho_button:hover{
+    background-color: var(--verdeEscuro);
+}
+
+#press_color{
+    background-color: #3e6159;
+}
+
+.Masculino_Feminino{
+    text-decoration: none;
+    color:white;
+    font-family: var(--texto);
+    font-size: 1.2rem;
+}
 .principal__sessao{
     display: flex;
-    width: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5%;
+    gap: 50px;
 }
 
 .principal__sessao__div__img{
@@ -114,10 +148,41 @@ header{
 
 .principal__sessao__div__interno{
     display: flex; 
-    gap:100px;
-    padding:5%;
-    width: auto;
+    gap:7vh;
     
+    justify-content: space-between;
+    overflow: hidden;
+    
+    
+    
+}
+.principal__sessao__div__interno:hover{
+    
+   overflow-x: auto; 
+    
+}
+
+.principal__sessao__div__interno::-webkit-scrollbar{
+    
+    height: 8px;
+}
+
+.principal__sessao__div__interno::-webkit-scrollbar-track{
+    background-color: #88a19b00;
+}
+.principal__sessao__div__interno::-webkit-scrollbar-thumb{
+    background-color: #f7f7f743;
+    
+    
+}
+::-webkit-scrollbar{
+    width: 1.5vh;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.631);
+}
+::-webkit-scrollbar-track{
+    background-color: white;
 }
 .principal__sessao__div__interno__span{
     display: flex;
@@ -126,24 +191,172 @@ header{
     text-align: center;
     color:white;
     font-family: var(--texto);
-    font-size: 25px;
+    font-size: 1.5rem;
 
 }
-.rodape{
-    /* background-color: var(--cinza);
-    padding: 184px 40px; */
-
+.span__img{
+    width:234px;
+    border-radius:10%;
 }
+/* .rodape{
+     background-color: var(--cinza);
+    padding: 184px 40px; 
+} */
 .rodape__div{
     background-color: var(--cinza);
     padding: 5% 40px;
     display: flex;
     font-family: var(--texto);
     font-weight: var(--tamanho);
+    justify-content: space-around;
+    
+}
+.buscar_box{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+.ativar{
+    width: 400px;
+    border-radius:0%;
+}
+.Buscas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11%;
+}
+.lupa_buscar, .btn_buscar{
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 200px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+.btn_buscar{
+    font-size:1.2rem;
+    margin-left:15px;
+}
+.input_buscar {
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 165px);
+    height: 100%;
+    line-height: 50px;
+    
+}
+.input_buscar input{
+   border:0; 
+   outline:0;
+   font-size:0.9rem;
 }
 
-@media(max-wdith:1536px){
+@media(max-width:1128px){
+    /* mudando o tamanho das fonts */
+    .cabecalho_titulo{
+
+       
+        font-size: 2rem;
+        
     
+    }
+    .principal__div2{
+       
+        font-size:1.5rem;
+        
+       
+    }
+    .buttons__busca, .cabecalho_button,.principal__div,.principal__sessao__div__interno__span{
+       
+        font-size:1.2rem;
+
+    }
+    .Masculino_Feminino{
+        
+        font-size: 1.1rem;
+    }
+    .span__img{
+        width:234px;
+    }
+    
+    
+    /* fimm */
+
+}
+@media(max-width:808px){
+    /* mudando o tamanho das fonts */
+    .principal__div2, .buttons__busca,.cabecalho_button,.principal__div,.principal__sessao__div__interno__span,.Masculino_Feminino{
+       
+        font-size:1rem;
+        
+       
+     }
+     .cabecalho_titulo{
+
+       
+        font-size: 1.5rem;
+        
+    
+    }
+    /* fimm */
+    header{
+        
+        margin-right: 10%;
+        
+    }
+    .cabecalho__div__img, .principal__sessao__div__img{
+        display:none;
+    }
+    .cabecalho__div__img{
+
+        width: calc(79px - 10px)
+    
+    }
+    .span__img{
+        width:150px;
+    }
+    .rodape__div{
+        height: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+}
+@media(max-width: 465px){
+    .principal__div2, .buttons__busca,.cabecalho_button,.principal__div,.principal__sessao__div__interno__span,.Masculino_Feminino{
+       
+        font-size:0.7rem;
+        
+       
+     }
+     .cabecalho_titulo{
+
+       
+        font-size: 1.2rem;
+        
+    
+    }
+    .rodape__div{
+        font-size: 0.9rem;
+    }
+    .principal__sessao__div__interno{
+        gap:20px;
+    }
+
+}
+.button_zap{
+    color: black;
+    
+}
+.rodape__div__link{
+    color:black
 }
