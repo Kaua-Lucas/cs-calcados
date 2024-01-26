@@ -48,7 +48,7 @@ header{
 
 .cabecalho__div__img{
 
-    width: 79px
+    width: 100px
 
 }
 
@@ -288,9 +288,9 @@ header{
 .aba{
     display:none;
     position: fixed;
-    left:25%;
+    left:35%;
     top:25%;
-    width: 50%;
+    width: 25%;
     
     /* justify-content: center; */
     flex-direction: column;
@@ -409,6 +409,10 @@ header{
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
+    }
+    .aba{
+        left:25%;
+        width: 50%;
     }
 
 }
