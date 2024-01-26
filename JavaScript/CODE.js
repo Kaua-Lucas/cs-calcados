@@ -33,5 +33,17 @@ if(dt.getHours() >= 0 && dt.getHours() < 12){
     var link = document.querySelectorAll('.button_zap')[1];
     link.href = "https://wa.me/5581995418334?text=Boa%20noite!!%20Tenho%20uma%20duvida.%20";
 }
+//mostrar aba de redes sociais abertas
 
+let aba = document.querySelectorAll(".cabecalho_button")[1];
+let caixa = document.querySelector(".aba");
+let fechar = document.querySelector(".aba_button_exit_click")
+aba.addEventListener('click', ()=>{
+    caixa.classList.add("aba_ativa")
+    console.log("ola")
+})
+fechar.addEventListener('click', ()=>{
+    caixa.classList.remove("aba_ativa")
+    console.log("ola")
+})
 

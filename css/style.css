@@ -124,7 +124,7 @@ header{
     background-color: var(--verdeEscuro);
 }
 
-#press_color{
+.press_color{
     background-color: #3e6159;
 }
 
@@ -259,6 +259,87 @@ header{
    font-size:0.9rem;
 }
 
+
+.button_zap{
+    color: black;
+    
+}
+.rodape__div__link{
+    color:black
+}
+.next_page{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    padding: 5%;
+    gap: 4%;
+    
+
+}
+.next_page__linkpage{
+    color: white;
+    font-size:150%;
+    
+    
+    
+}
+.aba{
+    display:none;
+    position: fixed;
+    left:25%;
+    top:25%;
+    width: 50%;
+    
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.915);
+    border-radius:1%;
+    
+    
+}
+.aba_button_exit{
+    font-size: 130%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    /* gap:30%; */
+    font-family: var(--subTitulo);
+    font-weight: var(--tamanho);
+    
+
+
+    
+}
+.aba_button_exit__text{
+    font-size:1.5rem
+}
+.aba_links{
+    display:flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10%;
+    gap:10px;
+    font-family: var(--texto);
+}
+.aba_links_link{
+    text-decoration: none;
+}
+
+.aba_button_exit_click{
+    
+    cursor: pointer;
+    position: absolute;
+    right:5%
+
+    
+}
+.aba_ativa{
+    display:flex;
+    
+}
+
 @media(max-width:1128px){
     /* mudando o tamanho das fonts */
     .cabecalho_titulo{
@@ -291,7 +372,7 @@ header{
     /* fimm */
 
 }
-@media(max-width:808px){
+@media(max-width:850px){
     /* mudando o tamanho das fonts */
     .principal__div2, .buttons__busca,.cabecalho_button,.principal__div,.principal__sessao__div__interno__span,.Masculino_Feminino{
        
@@ -338,25 +419,18 @@ header{
         
        
      }
-     .cabecalho_titulo{
+     .cabecalho_titulo {
 
        
         font-size: 1.2rem;
         
     
     }
-    .rodape__div{
+    .rodape__div,.aba_button_exit__text ,.aba_links{
         font-size: 0.9rem;
     }
     .principal__sessao__div__interno{
         gap:20px;
     }
 
-}
-.button_zap{
-    color: black;
-    
-}
-.rodape__div__link{
-    color:black
 }
